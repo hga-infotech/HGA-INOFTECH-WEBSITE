@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HGA Infotech | Digital Transformation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background:#0a0f1c;
+    color:white;
+}
+
+/* ===== HEADER ===== */
+header{
+position:fixed;
+top:0;
+width:100%;
+height:90px;
+padding:0 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+z-index:1000;
+}
+
+/* Logo + Text */
+.header-left{
+    display:flex;
+    align-items:center; 
+  /* vertical center */
+    gap:0;            /* space between logo and text */
+}
+
+.header-left img{
+    height:150px;        /* same as light theme */
+    width:auto;
+}
+
+
+.header-left .logo-text{
+    font-size:22px;
+    font-weight:600;
+    letter-spacing:2px;
+    color:#4fd1c5;
+    margin-bottom:5px;
+}
+
+/* NAVIGATION */
+nav{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:600;
+    transition:0.3s;
+}
+.logo
+nav a:hover{
+    color:#00e0ff;
+}
+
+/* HERO SECTION */
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(10,15,28,0.35), rgba(10,15,28,0.35)),
+               url('ai-background.png');
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:20px;
+    margin-top:90px; /* space for fixed header */
+}
+
+.hero-content h1{
+    font-family:'Playfair Display', serif;
+    font-size:60px;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:18px;
+    margin-bottom:30px;
+    color:#e0e0e0;
+}
+
+.btn{
+    padding:14px 35px;
+    background:#4fd1c5;
+    color:#000;
+    text-decoration:none;
+    font-weight:600;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+}
+
+/* CONTACT SECTION */
+
+
+/* MOBILE */
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
+        padding:15px 20px;
+    }
+
+    .hero-content h1{
+        font-size:36px;
+    }
+
+    nav{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-left">
+        <img src="logo.png" alt="HGA Logo">
+        <div class="logo-text"></div>
+    </div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Empowering Your Digital Transformation</h1>
+        <p>Advanced IT Services & Consulting Solutions for Modern Enterprises</p>
+    </div>
+</section>
+
+<s
+</body>
+</html>

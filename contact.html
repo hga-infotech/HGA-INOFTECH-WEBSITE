@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HGA Infotech | Contact</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background:#0a0f1c;
+    color:white;
+}
+
+/* HEADER */
+header{
+position:fixed;
+top:0;
+width:100%;
+height:90px;
+padding:0 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+z-index:1000;
+}
+
+.header-left{
+    display:flex;
+    align-items:flex-end;  /* aligns text with bottom of logo */
+    gap:0;                 
+}
+
+.header-left img{
+    height:150px; 
+    width:auto;
+}
+
+.header-left .logo-text{
+    font-size:14px;        
+    font-weight:600;
+    letter-spacing:1px;    
+    color:#4fd1c5;
+    margin-bottom:5px;     
+    text-transform:none;   /* normal case "Infotech" */
+}
+
+/* NAVIGATION */
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:30px;
+    font-size:14px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00e0ff;
+}
+
+/* HERO SECTION */
+.hero{
+    height:60vh;
+    background:linear-gradient(rgba(10,15,28,0.35), rgba(10,15,28,0.35)),
+               url('ai-background.png');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-family:'Playfair Display', serif;
+    font-size:50px;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:18px;
+    margin-bottom:30px;
+    color:#e0e0e0;
+}
+
+/* CONTACT SECTION */
+.contact{
+    background:#0a0f1c;
+    padding:100px 20px;
+    text-align:center;
+}
+
+.contact h2{
+    font-family:'Playfair Display', serif;
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.contact p{
+    margin-top:15px;
+    font-size:18px;
+    color:#ddd;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:30px;
+    background:#111;
+    font-size:14px;
+    color:#aaa;
+}
+
+footer a{
+    color:#4fd1c5;
+    text-decoration:none;
+}
+
+footer a:hover{
+    text-decoration:underline;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    header{
+        padding:20px;
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+    }
+
+    .hero-content h1{
+        font-size:36px;
+    }
+
+    nav{
+        display:none;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-left">
+        <img src="logo.png" alt="HGA Logo">
+        <div class="logo-text"></div>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Contact HGA Infotech</h1>
+        <p>We are here to help you with IT consulting and enterprise solutions.</p>
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Get in Touch</h2>
+    <p>Have questions or need IT consulting support?</p>
+    <p>
+        📧 Email us at 
+        <a href="mailto:support@hgainoftech.com" style="color:#4fd1c5; font-weight:600;">
+        support@hgainoftec.com
+        </a>
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 HGA Infotech. All Rights Reserved.</p>
+    <p style="margin-top:10px;">
+        📧 <a href="mailto:support@hgainoftech.com">
+        support@hgainoftech.com
+        </a>
+    </p>
+</footer>
+
+</body>
+</html>

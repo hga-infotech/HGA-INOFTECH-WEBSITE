@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HGA Infotech | Digital Transformation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins', sans-serif;
+background:#f8fafc;
+color:#111827;
+}
+
+/* ===== HEADER ===== */
+header{
+position:fixed;
+top:0;
+width:100%;
+height:90px;
+padding:0 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:white;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
+z-index:1000;
+}
+
+/* LOGO */
+.logo img{
+height:150px; /* Match Services page */
+width:auto;
+display:block;
+}
+
+/* NAVIGATION */
+nav a{
+color:#475569;
+text-decoration:none;
+margin-left:35px;
+font-size:16px;
+font-weight:600;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#2563eb;
+}
+
+
+.btn{
+padding:14px 35px;
+background:white;
+color:#2563eb;
+text-decoration:none;
+font-weight:600;
+border-radius:30px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#e2e8f0;
+}
+
+.hero img{
+width:450px;
+border-radius:20px;
+box-shadow:0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* ===== PREVIEW SECTIONS ===== */
+.preview{
+padding:100px 10%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:60px;
+flex-wrap:wrap;
+}
+
+.preview img{
+width:450px;
+border-radius:20px;
+box-shadow:0 15px 30px rgba(0,0,0,0.1);
+}
+
+.preview-text{
+max-width:500px;
+}
+
+.preview-text h2{
+font-size:40px;
+margin-bottom:20px;
+color:#111827;
+}
+
+.preview-text p{
+color:#475569;
+line-height:1.7;
+margin-bottom:20px;
+}
+
+
+
+/* ===== FOOTER ===== */
+footer{
+text-align:center;
+padding:30px;
+background:#0f172a;
+font-size:14px;
+color:#94a3b8;
+}
+
+footer a{
+color:#60a5fa;
+text-decoration:none;
+}
+
+/* ===== MOBILE ===== */
+@media(max-width:900px){
+
+header{
+flex-direction:column;
+padding:20px;
+}
+
+.logo img{
+height:120px;
+}
+
+nav{
+margin-top:15px;
+}
+
+.hero{
+padding:350px 5% 80px 5%;
+flex-direction:column;
+text-align:center;
+}
+
+.hero img{
+width:90%;
+margin-top:40px;
+}
+
+.hero-text h1{
+font-size:36px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">
+<img src="logo.png" alt="HGA Logo">
+</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="about.html">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+
+
+<!-- Enterprise IT Solutions Section -->
+<section class="preview">
+<img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa" alt="Cloud Computing">
+<div class="preview-text">
+<h2>Enterprise IT Solutions</h2>
+<p>
+With 30+ years of combined expertise, HGA Infotech delivers Oracle,
+cloud, DevOps, automation, and enterprise database solutions for
+global organizations.
+</p>
+
+<p>
+We focus on performance, scalability, and security to ensure your
+technology infrastructure supports business growth.
+</p>
+
+<a href="services.html" class="btn">Explore Services</a>
+</div>
+</section>
+
+<!-- Industry Domain Expertise Section -->
+<section class="preview">
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f" alt="Industry Solutions">
+<div class="preview-text">
+<h2>Industry Domain Expertise</h2>
+<p>
+HGA Infotech brings strong domain expertise across Telecommunications,
+Banking & Financial Services (BFSI), Retail & E-Commerce, Healthcare,
+Manufacturing, and Public Sector enterprises.
+</p>
+
+<p>
+We understand industry-specific challenges including regulatory compliance,
+high transaction volumes, real-time processing, security frameworks, and
+large-scale infrastructure management — enabling businesses to operate
+securely and efficiently.
+</p>
+
+<a href="services.html" class="btn">Discover More</a>
+</div>
+</section>
+
+</a>
+</p>
+</section>
+
+</body>
+</html>
