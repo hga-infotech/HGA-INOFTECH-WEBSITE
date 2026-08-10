@@ -1,172 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HGA Infotech | Digital Transformation</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family: 'Poppins', sans-serif;
-    background:#0a0f1c;
-    color:white;
-}
-
-/* ===== HEADER ===== */
-header{
-position:fixed;
-top:0;
-width:100%;
-height:90px;
-padding:0 20px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-box-shadow:0 4px 15px rgba(0,0,0,0.08);
-z-index:1000;
-}
-
-/* Logo + Text */
-.header-left{
-    display:flex;
-    align-items:center; 
-  /* vertical center */
-    gap:0;            /* space between logo and text */
-}
-
-.header-left img{
-    height:150px;        /* same as light theme */
-    width:auto;
-}
-
-
-.header-left .logo-text{
-    font-size:22px;
-    font-weight:600;
-    letter-spacing:2px;
-    color:#4fd1c5;
-    margin-bottom:5px;
-}
-
-/* NAVIGATION */
-nav{
-    display:flex;
-    align-items:center;
-    gap:30px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    font-size:16px;
-    font-weight:600;
-    transition:0.3s;
-}
-.logo
-nav a:hover{
-    color:#00e0ff;
-}
-
-/* HERO SECTION */
-.hero{
-    height:100vh;
-    background:linear-gradient(rgba(10,15,28,0.35), rgba(10,15,28,0.35)),
-               url('MAINSCREEN.png');
-    background-size:cover;
-    background-position:center;
-    background-attachment:fixed;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:20px;
-    margin-top:90px; /* space for fixed header */
-}
-
-.hero-content h1{
-    font-family:'Playfair Display', serif;
-    font-size:60px;
-    line-height:1.2;
-    margin-bottom:20px;
-}
-
-.hero-content p{
-    font-size:18px;
-    margin-bottom:30px;
-    color:#e0e0e0;
-}
-
-.btn{
-    padding:14px 35px;
-    background:#4fd1c5;
-    color:#000;
-    text-decoration:none;
-    font-weight:600;
-    border-radius:30px;
-    transition:0.3s;
-}
-
-.btn:hover{
-    background:white;
-}
-
-/* CONTACT SECTION */
-
-
-/* MOBILE */
-@media(max-width:768px){
-    header{
-        flex-direction:column;
-        align-items:flex-start;
-        gap:10px;
-        padding:15px 20px;
-    }
-
-    .hero-content h1{
-        font-size:36px;
-    }
-
-    nav{
-        flex-direction:column;
-        align-items:flex-start;
-        gap:15px;
-    }
-}
-</style>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="HGA Infotech delivers enterprise IT consulting, Oracle database, cloud, DevOps, security and custom software solutions.">
+  <title>HGA Infotech | Enterprise Technology, Built for What’s Next</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+  <header class="site-header"><div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="HGA Infotech home"><img src="logo.png" alt="HGA Infotech"></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav-links" aria-label="Main navigation"><a class="active" href="index.html">Home</a><a href="services.html">Services</a><a href="about.html">About</a><a class="nav-cta" href="contact.html">Let’s talk</a></nav>
+  </div></header>
 
-<header>
-    <div class="header-left">
-        <img src="logo.png" alt="HGA Logo">
-        <div class="logo-text"></div>
-    </div>
+  <main>
+    <section class="hero"><div class="container hero-layout"><div class="hero-content">
+      <span class="eyebrow">Enterprise technology partner</span>
+      <h1>Smart IT solutions for a <span>digital-first</span> world.</h1>
+      <p class="hero-copy">From mission-critical databases to cloud platforms and custom software, we design resilient technology that performs today and scales for tomorrow.</p>
+      <div class="actions"><a class="btn btn-primary" href="contact.html">Start a conversation →</a><a class="btn btn-secondary" href="services.html">Explore our services</a></div>
+    </div><div class="hero-showcase" aria-hidden="true"><div class="showcase-orbit orbit-one"></div><div class="showcase-orbit orbit-two"></div><div class="showcase-card showcase-main"><span>Digital transformation</span><strong>Build. Modernize.<br>Scale.</strong><div class="showcase-bars"><i></i><i></i><i></i><i></i></div></div><div class="showcase-card showcase-float"><b>Always-on</b><span>Reliability-first engineering</span></div><div class="showcase-pill">Secure by design ✓</div></div></div></section>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="services.html">Services</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+    <div class="trust-bar"><div class="container trust-grid">
+      <div class="stat"><strong>30+ years</strong><span>Combined industry expertise</span></div>
+      <div class="stat"><strong>24/7</strong><span>Managed support capability</span></div>
+      <div class="stat"><strong>6 domains</strong><span>Deep industry experience</span></div>
+      <div class="stat"><strong>End-to-end</strong><span>Strategy through operations</span></div>
+    </div></div>
 
-<section class="hero">
-    <div class="hero-content">
-        <h1>Empowering Your Digital Transformation</h1>
-        <p>Advanced IT Services & Consulting Solutions for Modern Enterprises</p>
-    </div>
-</section>
+    <section class="expertise-strip"><div class="container"><p>Technology expertise across the modern enterprise</p><div class="expertise-list"><span>ORACLE</span><span>CLOUD</span><span>DEVOPS</span><span>DATABASE</span><span>AUTOMATION</span><span>SECURITY</span></div></div></section>
 
-<s
-</body>
+    <section class="section section-light"><div class="container">
+      <div class="section-head"><div><span class="eyebrow">What we do</span><h2>Complex technology. Clear outcomes.</h2><p class="lead">We bring senior expertise, practical engineering and dependable delivery to every engagement.</p></div><a class="text-link" href="services.html">View all services →</a></div>
+      <div class="services-grid">
+        <article class="service-card"><div class="icon-box">DB</div><h3>Oracle & Data Platforms</h3><p>High-availability architecture, performance tuning, migrations and enterprise database operations.</p></article>
+        <article class="service-card"><div class="icon-box">CL</div><h3>Cloud & DevOps</h3><p>Secure cloud foundations, automation and CI/CD systems that help teams ship with confidence.</p></article>
+        <article class="service-card"><div class="icon-box">SW</div><h3>Custom Software</h3><p>Purpose-built web applications, integrations and automation aligned to real business workflows.</p></article>
+      </div>
+    </div></section>
 
-</html>
+    <section class="section section-dark"><div class="container split">
+      <div class="visual-panel" aria-hidden="true"><div class="code-window"><div class="window-dots"><i></i><i></i><i></i></div><div class="code-line"></div><div class="code-line"></div><div class="code-line"></div><div class="code-line"></div></div></div>
+      <div><span class="eyebrow">Why HGA Infotech</span><h2>Built around your business—not buzzwords.</h2><p class="lead">We combine enterprise discipline with the speed and attention of a specialist team. Every recommendation is grounded in security, scalability and measurable value.</p>
+        <ul class="check-list"><li>Senior specialists working directly with your team</li><li>Security and reliability built into every layer</li><li>Practical roadmaps with clear priorities</li><li>Long-term support beyond project delivery</li></ul>
+        <a class="btn btn-secondary" href="about.html">Meet HGA Infotech</a>
+      </div>
+    </div></section>
+
+    <section class="section industries-section"><div class="container"><div class="section-head"><div><span class="eyebrow">Industry experience</span><h2>Technology shaped around your world.</h2><p class="lead">We understand the operational, security and scale requirements of complex industries.</p></div></div><div class="industry-grid"><article><span>01</span><h3>Telecommunications</h3></article><article><span>02</span><h3>Banking & Financial Services</h3></article><article><span>03</span><h3>Retail & E-Commerce</h3></article><article><span>04</span><h3>Healthcare</h3></article><article><span>05</span><h3>Manufacturing</h3></article><article><span>06</span><h3>Public Sector</h3></article></div></div></section>
+
+    <section class="cta"><div class="container cta-inner"><h2>Ready to turn technology into a competitive advantage?</h2><a class="btn btn-primary" href="contact.html">Discuss your project →</a></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container"><div class="footer-grid">
+    <div class="footer-brand"><a class="brand" href="index.html"><img src="logo.png" alt="HGA Infotech"></a><p>Enterprise IT consulting and engineering for organizations that depend on secure, scalable technology.</p></div>
+    <div class="footer-col"><h3>Company</h3><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a></div>
+    <div class="footer-col"><h3>Get in touch</h3><a href="mailto:support@hgainfotech.com">support@hgainfotech.com</a></div>
+  </div><div class="footer-bottom"><span>© 2026 HGA Infotech. All rights reserved.</span><span>Technology with clarity.</span></div></div></footer>
+  <script src="script.js"></script>
+</body></html>
